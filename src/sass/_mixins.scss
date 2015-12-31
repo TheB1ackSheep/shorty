@@ -1,0 +1,35 @@
+$break-small-min: 320px;
+$break-small-max: 736px;
+$break-medium-min: 768px;
+$break-medium-max: 1024px;
+$break-large: 1200px;
+
+@mixin media($media) {
+  @if $media == mobile {
+    @media only screen and (min-device-width: $break-small-min) and (max-device-width: $break-small-max) { @content; }
+  }
+  @else if $media == mobile_port {
+    @media only screen and (min-device-width: $break-small-min) and (max-device-width: $break-small-max) and (orientation: portrait) { @content; }
+  }
+  @else if $media == mobile_land {
+    @media only screen and (min-device-width: $break-small-min) and (max-device-width: $break-small-max) and (orientation: landscape) { @content; }
+  }
+  @else if $media == tablet {
+    @media only screen and (min-device-width: $break-medium-min) and (max-device-width: $break-medium-max) { @content; }
+  }
+  @else if $media == tablet_port {
+    @media only screen and (min-device-width: $break-medium-min) and (max-device-width: $break-medium-max) and (orientation: portrait) { @content; }
+  }
+  @else if $media == tablet_land {
+    @media only screen and (min-device-width: $break-medium-min) and (max-device-width: $break-medium-max) and (orientation: landscape) { @content; }
+  }
+  @else if $media == desktop {
+    @media only screen and (min-width: $break-large) { @content; }
+  }
+}
+
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+

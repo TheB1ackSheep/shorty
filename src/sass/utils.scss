@@ -1,0 +1,53 @@
+.hidden_mobile{
+	@include media(mobile){
+		display: none;
+		visibility: hidden;
+	}
+}
+
+.hidden_mobile_port{
+	@include media(mobile_port){
+		display: none;
+		visibility: hidden;
+	}
+}
+
+.hidden_mobile_land{
+	@include media(mobile_land){
+		display: none;
+		visibility: hidden;
+	}
+}
+
+.hidden_tablet{
+	@include media(tablet){
+		display: none;
+		visibility: hidden;
+	}
+}
+
+.hidden_tablet_port{
+	@include media(tablet_port){
+		display: none;
+		visibility: hidden;
+	}
+}
+
+.hidden_tablet_land{
+	@include media(tablet_land){
+		display: none;
+		visibility: hidden;
+	}
+}
+
+.hidden_desktop{
+	@include media(desktop){
+		display: none;
+		visibility: hidden;
+	}
+}
+
+.border-box{
+	overflow: hidden;
+	border: 1px solid #FFC400;
+}

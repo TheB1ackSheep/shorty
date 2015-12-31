@@ -1,0 +1,20 @@
+$prim-color: #D50000;
+
+$prim-text: #2D2D2D;
+$prim-light-text: white;
+
+.tab.red{
+	background-color: $prim-color;
+}
+
+.tab.red .tab_title{
+	color: $prim-text;	
+}
+
+.tab.red .tab_title.tab_title_active, .tab.red.tab_hover .tab_title:hover{
+	color: $prim-light-text;
+}
+
+.border-box.red{
+	border-color: $prim-color;
+}

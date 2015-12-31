@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="theme-color" content="#FFC400">
+    <link rel="canonical" href="index.html" />
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.1.0/foundation.min.css">-->
+    <link rel="stylesheet" href="/assets/css/shorty.min.css">
+    <style>
+      .overlay{
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 99;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+      }
+
+      .blinking{
+        animation: blinking 1s infinite;
+      }
+
+      @keyframes blinking {
+          0% {color: #000;}
+          50% {color: transparent;}
+          100% {color: #000;}
+      }
+    </style>
+  </head>
+  <body>
+    <div class="overlay blinking" id="overlay_loading">Loading...</div>
+    <section class="content">
+    <h1 class="text-uppercase">Tab</h1>
+      <p>This is a default tab control, animation and hover are disable by default.</p>
+      <div class="border-box">
+        <ul class="tab" data-tab>
+          <li class="tab_title tab_title_active"><a href="#page-1"><i class="material-icons">home</i></a></li>
+          <li class="tab_title"><a href="#page-2"><i class="material-icons">dns</i></a></li>
+          <li class="tab_title"><a href="#page-3"><i class="material-icons">report_problem</i></a></li>
+          <li class="tab_title"><a href="#page-4"><i class="material-icons">settings</i></a></li>
+          <li class="tab_bar"></li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-content_page" id="page-1">PAGE 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ut iure eligendi sequi provident, nam, tempora laboriosam obcaecati dolor architecto optio asperiores facilis dolorum quibusdam tenetur velit laudantium veritatis rem.</div>
+          <div class="tab-content_page" id="page-2">PAGE 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ut iure eligendi sequi provident, nam, tempora laboriosam obcaecati dolor architecto optio asperiores facilis dolorum quibusdam tenetur velit laudantium veritatis rem.</div>
+          <div class="tab-content_page" id="page-3">PAGE 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ut iure eligendi sequi provident, nam, tempora laboriosam obcaecati dolor architecto optio asperiores facilis dolorum quibusdam tenetur velit laudantium veritatis rem.</div>
+          <div class="tab-content_page" id="page-4">PAGE 4. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ut iure eligendi sequi provident, nam, tempora laboriosam obcaecati dolor architecto optio asperiores facilis dolorum quibusdam tenetur velit laudantium veritatis rem.</div>
+        </div>
+      </div>
+      <p>To enable hover mode just add <code>.tab_hover</code> to the class</p>
+      <div class="border-box">
+        <ul class="tab tab_hover" data-tab>
+          <li class="tab_title tab_title_active"><a href="#page-5"><i class="material-icons">home</i></a></li>
+          <li class="tab_title"><a href="#page-6"><i class="material-icons">dns</i></a></li>
+          <li class="tab_title"><a href="#page-7"><i class="material-icons">report_problem</i></a></li>
+          <li class="tab_title"><a href="#page-8"><i class="material-icons">settings</i></a></li>
+          <li class="tab_bar"></li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-content_page" id="page-5">PAGE 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ut iure eligendi sequi provident, nam, tempora laboriosam obcaecati dolor architecto optio asperiores facilis dolorum quibusdam tenetur velit laudantium veritatis rem.</div>
+          <div class="tab-content_page" id="page-6">PAGE 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ut iure eligendi sequi provident, nam, tempora laboriosam obcaecati dolor architecto optio asperiores facilis dolorum quibusdam tenetur velit laudantium veritatis rem.</div>
+          <div class="tab-content_page" id="page-7">PAGE 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ut iure eligendi sequi provident, nam, tempora laboriosam obcaecati dolor architecto optio asperiores facilis dolorum quibusdam tenetur velit laudantium veritatis rem.</div>
+          <div class="tab-content_page" id="page-8">PAGE 4. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ut iure eligendi sequi provident, nam, tempora laboriosam obcaecati dolor architecto optio asperiores facilis dolorum quibusdam tenetur velit laudantium veritatis rem.</div>
+        </div>
+      </div>
+      <p>For animation, you can use <code>.animated</code></p>
+      <div class="border-box">
+        <ul class="tab tab_hover animated" data-tab>
+          <li class="tab_title tab_title_active"><a href="#page-9"><i class="material-icons">home</i></a></li>
+          <li class="tab_title"><a href="#page-10"><i class="material-icons">dns</i></a></li>
+          <li class="tab_title"><a href="#page-11"><i class="material-icons">report_problem</i></a></li>
+          <li class="tab_title"><a href="#page-12"><i class="material-icons">settings</i></a></li>
+          <li class="tab_bar"></li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-content_page" id="page-9">PAGE 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ut iure eligendi sequi provident, nam, tempora laboriosam obcaecati dolor architecto optio asperiores facilis dolorum quibusdam tenetur velit laudantium veritatis rem.</div>
+          <div class="tab-content_page" id="page-10">PAGE 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ut iure eligendi sequi provident, nam, tempora laboriosam obcaecati dolor architecto optio asperiores facilis dolorum quibusdam tenetur velit laudantium veritatis rem.</div>
+          <div class="tab-content_page" id="page-11">PAGE 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ut iure eligendi sequi provident, nam, tempora laboriosam obcaecati dolor architecto optio asperiores facilis dolorum quibusdam tenetur velit laudantium veritatis rem.</div>
+          <div class="tab-content_page" id="page-12">PAGE 4. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ut iure eligendi sequi provident, nam, tempora laboriosam obcaecati dolor architecto optio asperiores facilis dolorum quibusdam tenetur velit laudantium veritatis rem.</div>
+        </div>
+      </div>
+      <p>Color also enabled for tab.</p>
+      <div class="border-box red">
+        <ul class="tab tab_hover animated red" data-tab>
+          <li class="tab_title tab_title_active"><a href="#page-13"><i class="material-icons">home</i></a></li>
+          <li class="tab_title"><a href="#page-14"><i class="material-icons">dns</i></a></li>
+          <li class="tab_title"><a href="#page-15"><i class="material-icons">report_problem</i></a></li>
+          <li class="tab_title"><a href="#page-16"><i class="material-icons">settings</i></a></li>
+          <li class="tab_bar"></li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-content_page" id="page-13">PAGE 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ut iure eligendi sequi provident, nam, tempora laboriosam obcaecati dolor architecto optio asperiores facilis dolorum quibusdam tenetur velit laudantium veritatis rem.</div>
+          <div class="tab-content_page" id="page-14">PAGE 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ut iure eligendi sequi provident, nam, tempora laboriosam obcaecati dolor architecto optio asperiores facilis dolorum quibusdam tenetur velit laudantium veritatis rem.</div>
+          <div class="tab-content_page" id="page-15">PAGE 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ut iure eligendi sequi provident, nam, tempora laboriosam obcaecati dolor architecto optio asperiores facilis dolorum quibusdam tenetur velit laudantium veritatis rem.</div>
+          <div class="tab-content_page" id="page-16">PAGE 4. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ut iure eligendi sequi provident, nam, tempora laboriosam obcaecati dolor architecto optio asperiores facilis dolorum quibusdam tenetur velit laudantium veritatis rem.</div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!--<script src="https://cdn.jsdelivr.net/foundation/6.1.0/foundation.min.js"></script>-->
+    <script src="/assets/js/shorty.js"></script>
+  </body>
+</html>
